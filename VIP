@@ -1,0 +1,76 @@
+hostname=*.my10api.com,m.baidu.com,api.*.xyz,*.googlevideo.com,*.googleapis.com,api1000.gdqeb.club, testflight.apple.com, sub.store, buy.itunes.apple.com, *.rr.tv, p.du.163.com, ap*.intsig.net, api1000.cvxia.com, api1000.gdqeb.club, 118.89.204.198, awmattack.*.com, pan.baidu.com, lginstaacademy.com, 69shipin.vip, jk.5apk.cn, api.myb6api.org:8080, api.wscdn.vip, api.*.xyz, gateway-api.*.com,api.*.com, m.pearkin.com, ttt2.tbrapi.org:8080
+
+#国区TF无法下载已下架app规则
+^https?:\/\/testflight\.apple\.com\/v2\/accounts\/.*\/apps\/\d*/builds/\d*/install url request-body storefrontId" : ".*", request-body storefrontId" : "143441-1,29",
+
+#百度UA设置及优化手机端网页显示-（ m.baidu.com）
+^https?:\/\/m\.baidu\.com url request-header (\r\n)User-Agent:.+(\r\n) request-header $1User-Agent: Mozilla/5.0 (iPhone; CPU iPhone OS 13_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Mobile/15E148 Safari/16C50 Quark/604.1 T7/10.3 SearchCraft/2.6.3 (Baidu; P1 8.0.0)$2
+
+#91短视频解锁VIP和金币- (*.i91porn.*)
+^https?:\/\/.+\.(my10api|(.*91.*))\.(com|tips|app|xyz)(:\d{2,5})?\/api.php$ url script-response-body https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/91.js
+
+#黄瓜视频完美解锁-（ api1000.cvxia.com）
+https:\/\/api1000\.gdqeb\.com\/(user\/info|mov\/browse2) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/hgshp.js
+
+#黄瓜视频单独破解付费( api1000.gdqeb.club)
+https:\/\/api1000\.gdqeb\.club\/(user\/info|mov\/browse2*) url script-response-body https://raw.githubusercontent.com/JungegeCN/JGG/master/hgsp.js
+
+#substore    浏览器访问https://sub-store.vercel.app/#/
+^https?:\/\/sub\.store url script-analyze-echo-response https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js
+
+# 网易蜗牛读书VIP (By yxiaocai and JO2EY)
+^https?://p\.du\.163\.com/readtime/info.json url reject
+^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/wnyd.js
+
+# > 香蕉会员
+https:\/\/.*\.*apps.com url request-header Cookie:.+ request-header Cookie: xxx_api_auth=3438326165616639656432363065366133396263643766353233306436356463
+# > 香蕉去广告
+https?:\/\/.*\.*apps\.com\/(ucp\/index|getGlobalData|.+\/reqplay\/) url script-response-body https://raw.githubusercontent.com/Gx3dong/Surge/master/JS/xjsp.js
+
+#咪哩视频破解
+#下载地址:http://69n1.cn
+^https:\/\/awmattack\.(.+)\.com\/(api/member/info|api/video/video/video_play) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/mlsp.json
+
+
+#百度网盘解锁vip   pan.baidu.com
+https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+#百度云倍速播放
+https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/BaiduCloud.js
+
+#酷咪视频无限看-（lginstaacademy.com）
+^https:\/\/(.+)\.com(\/\/api\/movie\/addPlay|\/\/api\/member|\/api\/video_clip\/play|\/api\/app\/message_list|\/api\/home\/index_recommend|\/\/api\/movie\/play\/) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/kumi.js
+
+#69视频解锁会员(少年歌行pro製作，轉載請保留出處信息)
+#69視頻下載地址：http://app.exxanz.com/?code=SQDDAH
+#^http:\/\/69shipin\.vip\/api\/user\/personal url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/69sp/69sp.js
+#^http:\/\/69shipin\.vip\/api\/community\/edit url response-body "code":\d+ response-body "code":200
+
+#69视频解锁会员
+^http:\/\/69shipin\.vip\/api(\/community|\/user)(\/edit|\/personal)  url script-response-body https://raw.githubusercontent.com/qianmo001/ACL4SSR/rm/69sp.js
+
+#辣椒视频解锁会员(少年歌行pro製作，轉載請保留出處信息)
+#下载地址：http://sdfvs.cxfbhy.live/?code=67JALF
+^http:\/\/jk\.5apk\.cn\/api(\/reg|\/play) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/lajiao/sngxljsp.js
+
+#菠萝视频解锁vip无限看，没破解付费（by 黑科技）    下载地址https://aff.polomv.com           api.myb6api.com:8080
+^http:\/\/api\.myb6api\.(org|com):8080\/api\.php\/api\/users\/getBaseInfo url script-response-body https://qxzy.top/rules/QuantumultX/js/blsp.js
+
+#波波视频会员去广告（短视频未解锁，网球全部解锁） api.wscdn.vip
+^http:\/\/api\.wscdn\.vip\/index.+ url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/s7aa.cn/bbsp.js
+
+#桃子视频解锁会员
+#下载地址：https://av2.fit?code=ECLCJELC
+^http:\/\/api.*.xyz\/fast-cloud\/user\/info url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/tzsp/sngxtz.js
+
+#樊登读书解锁付费书籍(少年歌行pro製作，轉載請保留出處信息)
+^https:\/\/gateway-api.*.com\/innovation-orchestration\/api\/ebook\/v100\/ebookInfo url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/fdds/sngxfd.js
+#樊登读书解锁付费课程(少年歌行pro製作，轉載請保留出處信息)
+^https:\/\/api.*.com\/* url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/fdds/sngxfdkc.js
+^https:\/\/gateway-api.*.com(\/resource-orchestration-system\/knowledge\/v100\/mainList|\/resource-orchestration-system\/program\/content) url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/fdds/sngxfdkc.js
+
+#雪梨解锁会员
+^https:\/\/m\.pearkin\.com\/api(\/account|\/movie)(\/IndexDetail|\/IsVip|\/WatchMovieNew)  url script-response-body  https://raw.githubusercontent.com/qianmo001/xiaobaibubai/rm/xlsp.js
+
+#汤头条解锁vip(少年歌行pro製作，轉載請保留出處信息)
+#下载地址：ttt.tips
+^http:\/\/ttt2\.tbrapi\.org\:8080\/api.php\/api\/user\/userinfo url script-response-body https://raw.githubusercontent.com/sngxpro/QuantumultX/master/ttt/sngxttt.js
