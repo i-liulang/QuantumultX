@@ -1,4 +1,4 @@
-#!name=获取 京东 Cookie
+#!name=京东辅助登录
 #!desc=使用浏览器访问 https://bean.m.jd.com/bean/signIndex.action 点击签到即可获取Cookie
 
 [Script]
