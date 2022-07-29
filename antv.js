@@ -7,7 +7,7 @@
 
 下载地址-https://a2.tvgkanav.com/#/?antvinvite=MvbmXOYraY
 
-^https?:\/\/s500\..+\.com\/api\/videos url script-request-header https://raw.githubusercontent.com/i-liulang/QuantumultX/edit/main/antv.js
+^https?:\/\/s500\..+\.com\/api\/videos url script-request-header https://raw.githubusercontent.com/i-liulang/QuantumultX/main/antv.js
 
 [mitm]
 hostname = s500*
