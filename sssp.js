@@ -21,7 +21,7 @@ hostname = files.yuchenglw.com
 
 var body=$response.body;
 
-body = response.body.replace(/(<div class="speaker">)[\s\S[\d\D]{0,345}(<\/div>)/g,'<!--  -->');
+body = $response.body.replace(/(<div class="speaker">)[\s\S[\d\D]{0,345}(<\/div>)/g,'<!--  -->');
 
    
 
