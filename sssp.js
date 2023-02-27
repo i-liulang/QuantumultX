@@ -12,10 +12,10 @@ TG频道群：https://t.me/py996
 使用声明：此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
 *******************************
 [rewrite_local]
-^https:\/\/files\.yuchenglw\.com url script-response-body https://raw.githubusercontent.com/i-liulang/QuantumultX/main/sssp.js
+^https:\/\/files\.(yuchenglw|honghufly)\.com url script-response-body https://raw.githubusercontent.com/i-liulang/QuantumultX/main/sssp.js
 
 [mitm] 
-hostname = files.yuchenglw.com
+hostname = files.*.com
 *******************************/
 
 
