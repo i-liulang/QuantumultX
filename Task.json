@@ -1,0 +1,19 @@
+
+{
+    "name":"定时任务",
+    "description":"自用",
+    "task":[
+        "0 12 * * * https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js, tag=京东物流派件提醒, img-url=https://raw.githubusercontent.com/id77/QuantumultX/master/icon/jdWuLiu.png, enabled=true",
+        "0 1 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/ithome/ithome.js, tag=ＩＴ之家, img-url=https://raw.githubusercontent.com/anker1209/icon/main/itzj.png, enabled=true",
+        "30 2 0 * * * https://raw.githubusercontent.com/ClydeTime/Surge/main/Script/Task/xmly.js, tag=喜马拉雅, img-url=https://raw.githubusercontent.com/anker1209/icon/main/xmly.png, enabled=true",
+        "30 5 0 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_daily.js, tag=值买签到, img-url=https://raw.githubusercontent.com/anker1209/icon/main/smzdm.png, enabled=true",
+        "30 8 0 * * * https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=iQIYI签到, img-url=https://raw.githubusercontent.com/githubdulong/Script/master/Images/iQIYI.png, enabled=true",
+        "30 10 0 * * * https://raw.githubusercontent.com/githubdulong/Script/master/weifeng.js, tag=威锋论坛, img-url=https://raw.githubusercontent.com/anker1209/icon/main/wflt.png, enabled=true",
+	"0 12 0 * * * https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js, tag=阿里云盘, img-url=https://raw.githubusercontent.com/githubdulong/Script/master/Images/ali2.png, enabled=true",
+	"30 15 0 * * * https://raw.githubusercontent.com/ClydeTime/BiliBili/main/js/BiliBiliDailyBonus.js, tag=哔哩哔哩, img-url=https://raw.githubusercontent.com/githubdulong/Script/master/Images/bilibili.png, enabled=true",
+	"0 18 0 * * * https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_signin.js, tag=百度贴吧, img-url=https://raw.githubusercontent.com/anker1209/icon/main/bddb.png, enabled=true",
+	"0 7 0 * * * https://raw.githubusercontent.com/i-liulang/Surge/main/ysf.js, tag=云闪付, img-url=https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/UnionPay.png, enabled=true",
+	"30 9 * * * https://raw.githubusercontent.com/Yuheng0101/X/main/Tasks/60s.js, tag=每天60秒读懂世界, img-url=https://raw.githubusercontent.com/Yuheng0101/X/main/Assets/60s.png, enabled=true",
+	
+    ]
+}
