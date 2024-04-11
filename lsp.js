@@ -40,7 +40,7 @@ hostname = *.bmafdxt.com, *.yxlauhm.com, *.psovzwr.com, *.50*pi.com, *.wmq*api*.
 
 ******************************************/
 // const server = `http://192.168.10.2:7788` // 测试服
-const server = `https://free.yuhengy17.me` // 正式服
+const server = `http://192.168.10.2:7788` // 正式服
 const $ = new Env(`绿色产业链通杀`)
 const { origin } = ObjectKeys2LowerCase($request.headers)
 $.isResBody = typeof $response != 'undefined' && $response?.body
