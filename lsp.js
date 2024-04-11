@@ -28,13 +28,13 @@
 
 hostname = *.bmafdxt.com, *.yxlauhm.com, *.psovzwr.com, *.50*pi.com, *.wmq*api*.com, *.tbrapi.org, *.hichatapi.com, *.longyuandingyi.com,*.zihzot.com,*.snowing.ren,*.vzcnqmr.cn,*beibeini3.cn,*.pili01a.net,*.hhclyjz.cn, *.bhhcdou.cn, *.xuxivwx.cn, *.sdtuxyh.cn, *.kngpdsz.cn, *.sugugaj.cn, *.mqqjrv.com, *.gnikvh.com, *.auhvylo.cn, *.hefeixcx.xyz, *.vsmdboa.cn, *.pnowdvc.cn, *.xgfipub.cn, *.guangxu124.cn, *.pvlzxh.cn, *.b0lgw.com, *.avwpyqtl.com, *.uvursx.com, *.bing0010.com, *.mlchve.com, *.qlpwbr.com, *.dnejkccw.tips, *.nlsxvnflc.com, *.gqzqweul.com, *.tlyuebxbd.tips, *.mjdvxxgld.com, *.wdadbcyb.tips, *.girnzxoiq.com, *.ytoamqrl.tips, *.esvtgdke.com, *.lgnkfallh.com, *.ncwmvrzpq.cc, *ecexzemzl.cc
 # 91短视频
-^https?:\/\/.*(bmafdxt|yxlauhm|psovzwr).com/pwa.php url script-analyze-echo-response https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp.js
+^https?:\/\/.*(bmafdxt|yxlauhm|psovzwr).com/pwa.php url script-analyze-echo-response https://raw.githubusercontent.com/i-liulang/QuantumultX/main/lsp.js
 # 50度灰
-^https?:\/\/.*50.*pi.com/pwa.php/api/(user/userinfo|MvDetail/(detail|xiao_detail)|home/(getOpenAdsAndVersion|appcenter)|system/getad) url script-response-body https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp.js
+^https?:\/\/.*50.*pi.com/pwa.php/api/(user/userinfo|MvDetail/(detail|xiao_detail)|home/(getOpenAdsAndVersion|appcenter)|system/getad) url script-response-body https://raw.githubusercontent.com/i-liulang/QuantumultX/main/lsp.js
 # 微密圈
-^https?:\/\/.*(wmq.*api\d+).com/pwa.php url script-analyze-echo-response https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp.js
+^https?:\/\/.*(wmq.*api\d+).com/pwa.php url script-analyze-echo-response https://raw.githubusercontent.com/i-liulang/QuantumultX/main/lsp.js
 # 撸先生
-^https?:\/\/.*hichatapi.+\/api\.php$ url script-analyze-echo-response https://raw.githubusercontent.com/Yuheng0101/X/main/Scripts/lsp.js
+^https?:\/\/.*hichatapi.+\/api\.php$ url script-analyze-echo-response https://raw.githubusercontent.com/i-liulang/QuantumultX/main/lsp.js
 # 𝐀𝐋𝐋
 ^(https?:\/\/)(?!long)([^./]+\.)*(longyuandingyi.com|zihzot.com|snowing.ren|vzcnqmr.cn|beibeini3.cn|pili01a.net|hhclyjz.cn|bhhcdou.cn|xuxivwx.cn|sdtuxyh.cn|kngpdsz.cn|sugugaj.cn|mqqjrv.com|gnikvh.com|auhvylo.cn|hefeixcx.xyz|vsmdboa.cn|pnowdvc.cn|xgfipub.cn|guangxu124.cn|pvlzxh.cn|b0lgw.com|avwpyqtl.com|uvursx.com|bing0010.com|mlchve.com|qlpwbr.com|dnejkccw.tips|nlsxvnflc.com|gqzqweul.com|tlyuebxbd.tips|mjdvxxgld.com|wdadbcyb.tips|girnzxoiq.com|ytoamqrl.tips|esvtgdke.com|lgnkfallh.com|ncwmvrzpq.cc|ecexzemzl.cc)(\/.*)? url 302 $1long.$3$4
 
